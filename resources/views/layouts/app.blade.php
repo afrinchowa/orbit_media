@@ -98,7 +98,7 @@
 
             <div class="col-lg-4 col-md-6 footer-info">
               <h3>Orbit</h3>
-              <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+              <p>At Orbit Media Solutions, we are dedicated to crafting innovative digital strategies that drive results and build lasting partnerships. Your success is our mission, and we’re here to help your business reach for the stars.</p>
             </div>
 
             <div class="col-lg-2 col-md-6 footer-links">

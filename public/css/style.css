@@ -629,7 +629,12 @@ h6 {
 #services .title a {
     color: #111;
 }
-
+#services .box {
+    padding-left: 80px;
+}
+#services .icon {
+    padding-left: 50px;
+}
 #services .box:hover .title a {
     color: #007bff;
 }
@@ -1335,67 +1340,6 @@ h6 {
 #footer .footer-top .footer-links ul a:hover {
     color: #74b5fc;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #footer .footer-top .footer-contact {
     margin-bottom: 30px;
