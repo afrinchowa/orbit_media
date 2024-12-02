@@ -13455,7 +13455,48 @@
 		"sHeaderTH":  _stateDefault,
 		"sFooterTH":  _stateDefault,
 		"sJUIHeader": _headerFooter+" ui-corner-tl ui-corner-tr",
-		"sJUIFooter": _headerFooter+" ui-corner-bl ui-corner-br"
+		"sJUIFooter": _header
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		+" ui-corner-bl ui-corner-br"
 	} );
 	
 	}());
