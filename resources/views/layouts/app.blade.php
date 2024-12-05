@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NewBiz Bootstrap Template</title>
+  <title>Orbit Media</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -29,8 +29,8 @@
   <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
   <!-- =======================================================
-    Theme Name: NewBiz
-    Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
+    Theme Name: orbit
+    Theme URL: https://bootstrapmade.com/orbit-bootstrap-business-template/
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
