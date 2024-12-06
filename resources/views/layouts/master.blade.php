@@ -92,7 +92,7 @@ font-size: 16px;"> {{ Auth::user()->name }}&nbsp <a href="{{ route('logout') }}"
 
 
 
-          <li>
+          <!-- <li>
             <a href="#"><i class="fa fa-desktop fa-3x"></i>Robot</a>
 
             <ul class="nav nav-second-level">
@@ -105,27 +105,24 @@ font-size: 16px;"> {{ Auth::user()->name }}&nbsp <a href="{{ route('logout') }}"
               </li>
             </ul>
 
-          <li>
+          <li> -->
 
 
 
           <li>
-            <a href="#"><i class="fa fa-dashboard fa-3x"></i>Order</a>
+            <a href="#"><i class="fa fa-dashboard fa-3x"></i>Services</a>
             <ul class="nav nav-second-level">
 
 
               <li>
-                <a href="{{url('/pending_order')}}">Pending Order</a>
+                <a href="{{url('/products')}}">View Service</a>
               </li>
-
-
               <li>
-                <a href="{{url('/admin_order_accept_list')}}">Accepted Order</a>
+                <a href="{{url('/products/create')}}">Create Service</a>
               </li>
 
-              <li>
-                <a href="{{url('/admin_order_cancel_list')}}">Cancelled Order</a>
-              </li>
+
+
 
 
             </ul>
@@ -133,7 +130,7 @@ font-size: 16px;"> {{ Auth::user()->name }}&nbsp <a href="{{ route('logout') }}"
 
 
 
-          <li>
+          <!-- <li>
 
             <a href="#"><i class="fa fa-sitemap fa-3x"></i>Settings<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
@@ -152,7 +149,7 @@ font-size: 16px;"> {{ Auth::user()->name }}&nbsp <a href="{{ route('logout') }}"
 
             </ul>
 
-          </li>
+          </li> -->
         </ul>
         </li>
         <li>

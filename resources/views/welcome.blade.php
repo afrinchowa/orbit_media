@@ -98,16 +98,16 @@
       <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp  " data-wow-duration="1.4s">
         <div class="box">
           <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-          <h4 class="title"><a href="">Web Design and Development</a></h4>
+          <h4 class="title"><a href="{{ route('services.show', 'web-design-development') }}">Web Design and Development</a></h4>
           <p class="description">We don’t believe in one-size-fits-all. Our web development services are fully customized to align with your brand, goals, and target audience.
 
           </p>
         </div>
       </div>
       <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
-        <div class="box" >
+        <div class="box">
           <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
-          <h4 class="title"><a href="">Graphics Design</a></h4>
+          <h4 class="title"><a href="{{ route('services.show', 'graphics-design') }}">Graphics Design</a></h4>
           <p class="description">Our skilled graphic designers bring creativity and innovation to every project, ensuring that your visuals are both eye-catching and aligned with your brand identity.</p>
         </div>
       </div>
@@ -115,15 +115,14 @@
       <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
         <div class="box">
           <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-          <h4 class="title"><a href="">SEO (Search Engine Optimization)</a></h4>
+          <h4 class="title"><a href="{{ route('services.show', 'seo') }}">SEO (Search Engine Optimization)</a></h4>
           <p class="description">Our SEO strategies are designed to increase visibility, improve rankings, and drive organic traffic, ensuring your business gets noticed by the right audience.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
         <div class="box">
           <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-          <h4 class="title"><a href="">Social and Digital Marketing
-            </a></h4>
+          <h4 class="title"><a href="{{ route('services.show', 'digital-marketing') }}">Social and Digital Marketing</a></h4>
           <p class="description">We craft impactful digital marketing campaigns tailored to connect with your target audience and achieve your business goals.</p>
         </div>
       </div>
@@ -131,14 +130,14 @@
       <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
         <div class="box">
           <div class="icon"><i class="ion-ios-world-outline" style="color: #d6ff22;"></i></div>
-          <h4 class="title"><a href="">Video Editing</a></h4>
+          <h4 class="title"><a href="{{ route('services.show', 'video-editing') }}">Video Editing</a></h4>
           <p class="description">Elevate your brand's storytelling with engaging and professional video editing services, tailored to showcase your unique vision.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
         <div class="box">
           <div class="icon"><i class="ion-ios-clock-outline" style="color: #4680ff;"></i></div>
-          <h4 class="title"><a href="">Networking Solutions</a></h4>
+          <h4 class="title"><a href="{{ route('services.show', 'networking-solutions') }}">Networking Solutions</a></h4>
           <p class="description">We deliver efficient and secure networking services to ensure seamless connectivity and performance for your business.</p>
         </div>
       </div>
@@ -165,8 +164,9 @@
           <i class="fa fa-diamond"></i>
           <div class="card-body">
             <h5 class="card-title">Proven Expertise</h5>
-            <p class="card-text">Our team of digital marketing specialists boasts a wealth of experience and a proven track record of success. </p>
-            <a href="#" class="readmore">Read more </a>
+            <p class="card-text">Our team of digital marketing specialists boasts a wealth of experience and a proven track record of success.</p>
+            <!-- Link updated to point to a detail page -->
+            <a href="{{ url('/proven-expertise') }}" class="readmore">Read more </a>
           </div>
         </div>
       </div>
@@ -177,7 +177,8 @@
           <div class="card-body">
             <h5 class="card-title">Client-Centric Approach</h5>
             <p class="card-text">At Orbit Media Solutions, we prioritize forging lasting partnerships with our clients.</p>
-            <a href="#" class="readmore">Read more </a>
+            <!-- Link updated to point to a detail page -->
+            <a href="{{ url('/client-centric-approach') }}" class="readmore">Read more </a>
           </div>
         </div>
       </div>
@@ -187,8 +188,9 @@
           <i class="fa fa-object-group"></i>
           <div class="card-body">
             <h5 class="card-title">Innovative Solutions</h5>
-            <p class="card-text">Our commitment lies in delivering smarter insights and innovative strategies that elevate brands and foster sustainable growth. </p>
-            <a href="#" class="readmore">Read more </a>
+            <p class="card-text">Our commitment lies in delivering smarter insights and innovative strategies that elevate brands and foster sustainable growth.</p>
+            <!-- Link updated to point to a detail page -->
+            <a href="{{ url('/innovative-solutions') }}" class="readmore">Read more </a>
           </div>
         </div>
       </div>
@@ -196,31 +198,27 @@
     </div>
 
     <div class="row counters">
-
       <div class="col-lg-3 col-6 text-center">
         <span data-toggle="counter-up">274</span>
         <p>Clients</p>
       </div>
-
       <div class="col-lg-3 col-6 text-center">
         <span data-toggle="counter-up">421</span>
         <p>Projects</p>
       </div>
-
       <div class="col-lg-3 col-6 text-center">
         <span data-toggle="counter-up">1,364</span>
         <p>Hours Of Support</p>
       </div>
-
       <div class="col-lg-3 col-6 text-center">
         <span data-toggle="counter-up">18</span>
         <p>Hard Workers</p>
       </div>
-
     </div>
 
   </div>
 </section>
+
 
 <!--==========================
       Portfolio Section
