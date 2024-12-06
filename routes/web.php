@@ -36,6 +36,12 @@ Route::controller(ProductController::class)->group(function () {
     Route::put('/products/{product}', 'update')->name('products.update');
     Route::delete('/products/{product}', 'destroy')->name('products.destroy');
 });
+
+Route::get('/', [ProductController::class, 'welcome'])->name('home');
+
+
+
+
 Route::get('/services/{service}', [ServiceController::class, 'show'])->name('services.show');
 
 Route::get('/proven-expertise', function () {
@@ -49,4 +55,3 @@ Route::get('/client-centric-approach', function () {
 Route::get('/innovative-solutions', function () {
     return view('innovative-solutions');
 });
-

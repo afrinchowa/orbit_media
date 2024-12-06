@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>inovatiove</h1>
+<h1>Inovative Solution</h1>
 <p>Here we provide detailed information about our expertise...</p>
 <!DOCTYPE html>
 <html lang="en">

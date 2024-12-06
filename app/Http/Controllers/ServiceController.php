@@ -6,15 +6,17 @@ use Illuminate\Http\Request;
 
 class ServiceController extends Controller
 {
+
     public function show($service)
     {
         $services = [
             'web-design-development' => [
+                'sub' => " Designing involves creating an engaging interface, selecting colors, typography, and imagery that align with a brand's identity.",
                 'name' => 'Web Design and Development',
                 'details' => "Web Design and Development encompasses the entire process of creating and maintaining a website. From designing an aesthetically pleasing layout to developing the technical backend that makes it functional, web design and development ensure that users have an intuitive and seamless experience.
                 
                 
-                1.Designing involves creating an engaging interface, selecting colors, typography, and imagery that align with a brand's identity.
+               
 
 2.Development focuses on coding the website’s structure, implementing features, and ensuring it’s responsive across different devices.
 3.Technologies used: HTML, CSS, JavaScript, PHP, Laravel, React, and more.",
@@ -74,6 +76,7 @@ Cloud and Remote Networking: Enabling remote access, VPN solutions, and cloud co
         }
 
         return view('services.show', [
+            'serviceSub' => $services[$service]['sub'],
             'serviceName' => $services[$service]['name'],
             'serviceDetails' => $services[$service]['details'],
             // 'serviceDetails1' => $services[$service]['tech'],

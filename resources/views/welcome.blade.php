@@ -54,7 +54,7 @@
           Orbit Media Solutions has a history of delivering outstanding results for our clients. With a proven track record of success, we’ve earned a reputation as a reliable and trusted digital marketing agency.
         </p>
         <p>
-          Orbit Media Solutions has a history of delivering outstanding results for our clients. With a proven track record of success, we’ve earned a reputation as a reliable and trusted digital marketing agency.
+          The process starts with a comprehensive evaluation of your current digital presence, covering aspects such as website performance, online visibility, social media engagement, and beyond.
         </p>
       </div>
     </div>
@@ -73,7 +73,7 @@
           It begins with a thorough assessment of your current digital footprint, including website performance, online visibility, social media presence, and more.
         </p>
         <p>
-          It begins with a thorough assessment of your current digital footprint, including website performance, online visibility, social media presence, and more.
+          Orbit Media Solutions has built a strong reputation for consistently delivering exceptional results for our clients. With a history of success, we are recognized as a trusted and dependable digital marketing agency.
         </p>
       </div>
 
@@ -146,6 +146,52 @@
 
   </div>
 </section><!-- #services -->
+
+
+
+<!--=================
+ added services 
+ ==================-->
+
+<section id="products" class="section-bg" style="padding: 20px">
+  <div class="container">
+    <header class="section-header">
+      <h3>Our Upcomming Services</h3>
+      <p>Explore our latest products and services designed to meet your needs.</p>
+    </header>
+
+    <div class="row ">
+      @if($products->isNotEmpty())
+      @foreach($products as $product)
+      <div class="col-12 wow bounceInUp" data-wow-duration="1.4s">
+        <div class="box" style="
+            background-color: #dbe8ff; 
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+            border-radius: 10px; 
+            padding: 20px; 
+            margin: 15px 0;
+            text-align: center;
+          ">
+          <div class="icon">
+            @if($product->image != "")
+            <img src="{{ asset('uploads/products/' . $product->image) }}" alt="{{ $product->name }}" class="img-fluid" style="max-height: 100px;">
+            @else
+            <i class="ion-ios-cart-outline" style="color: #41cf2e;"></i>
+            @endif
+          </div>
+          <h4 class="title">{{ $product->name }}</h4>
+          <p class="description">{{ $product->description ?? 'No description available.' }}</p>
+          <!-- <p class="text-muted">Added on {{ \Carbon\Carbon::parse($product->created_at)->format('d M, Y') }}</p> -->
+        </div>
+      </div>
+      @endforeach
+      @else
+      <p>No products available.</p>
+      @endif
+    </div>
+  </div>
+</section>
+
 
 <!--==========================
       Why Us Section
@@ -394,7 +440,7 @@
             <h3>Saul Goodman</h3>
             <h4>Ceo &amp; Founder</h4>
             <p>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              "We saw a significant improvement in our online traffic and customer engagement after working with Orbit Media Solutions. Their professionalism and results are second to none."
             </p>
           </div>
 
@@ -403,7 +449,7 @@
             <h3>Sara Wilsson</h3>
             <h4>Designer</h4>
             <p>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              "Orbit Media Solutions helped us refine our digital strategy and achieve measurable growth. They provide innovative ideas and exceptional service every time."
             </p>
           </div>
 
@@ -412,7 +458,7 @@
             <h3>Jena Karlis</h3>
             <h4>Store Owner</h4>
             <p>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              "The team at Orbit Media Solutions delivered outstanding results for our business. Their creativity and strategic thinking helped us increase our sales by 40% in just 3 months."
             </p>
           </div>
 
@@ -421,7 +467,7 @@
             <h3>Matt Brandon</h3>
             <h4>Freelancer</h4>
             <p>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              "Working with Orbit Media Solutions has been a game-changer for us. They truly understand our brand and have helped us connect with our target audience more effectively."
             </p>
           </div>
 
@@ -430,7 +476,7 @@
             <h3>John Larson</h3>
             <h4>Entrepreneur</h4>
             <p>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              "Orbit Media Solutions has been instrumental in helping us grow our online presence. Their expertise in digital marketing is unmatched. Highly recommended!"
             </p>
           </div>
 

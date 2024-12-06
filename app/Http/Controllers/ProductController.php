@@ -9,15 +9,34 @@ use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
+    protected function getAllProducts()
+    {
+        return Product::orderBy('created_at', 'DESC')->get();
+    }
 
-    // this method will show products page
+    // Modify the index() method
     public function index()
     {
-        $products = Product::orderBy('created_at', 'DESC')->get();
-        return view('products.list', [
-            'products' => $products
-        ]);
+        $products = $this->getAllProducts();
+        return view('products.list', compact('products'));
     }
+
+    // Modify the welcome() method
+    public function welcome()
+    {
+        $products = $this->getAllProducts();
+        return view('welcome', compact('products'));
+    }
+
+
+    // this method will show products page
+    // public function index()
+    // {
+    //     $products = Product::orderBy('created_at', 'DESC')->get();
+    //     return view('products.list', [
+    //         'products' => $products
+    //     ]);
+    // }
     // this method will create products page
     public function create()
     {
@@ -56,7 +75,6 @@ class ProductController extends Controller
             $product->image = $imageName;
             $product->save();
         }
-
 
         return redirect()->route('products.index')->with('success', 'Product added successfully.');
     }
@@ -110,16 +128,15 @@ class ProductController extends Controller
         return redirect()->route('products.index')->with('success', 'Product updated successfully.');
     }
     // this method will delete products page
-    public function destroy($id) {
+    public function destroy($id)
+    {
         $product = Product::findOrFail($id);
 
         // delete image
         File::delete(public_path('uploads/products' . $product->image));
-// delete product from database
-$product->delete();
+        // delete product from database
+        $product->delete();
 
-return redirect()->route('products.index')->with('success','Product deleted successfully');
-
-
+        return redirect()->route('products.index')->with('success', 'Product deleted successfully');
     }
 }

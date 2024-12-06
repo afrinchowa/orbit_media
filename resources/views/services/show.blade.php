@@ -15,8 +15,8 @@
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f9;
             color: #333;
-            margin: 0;
-            padding: 0;
+            margin: 20px;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,23 +24,10 @@
             flex-direction: column;
         }
 
-        .content {
-            padding: 10px;
-            max-width: 800px;
-            text-align: center;
-        }
-
-        .img-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-
         .service-page {
             padding: 30px;
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             background-color: white;
             border-radius: 8px;
@@ -50,15 +37,17 @@
 
         .service-page h1 {
             font-size: 2.5rem;
-            color: #007bff;
-            /* Blue color for title */
+            font-weight: bold;
+            color: black;
             margin-bottom: 20px;
         }
 
-        .service-page p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #555;
+        .img-content {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
 
         .service-image {
@@ -67,6 +56,19 @@
             margin-top: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 10px;
+            padding: 10px;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .service-page p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
         }
 
         .back-link {
@@ -81,7 +83,6 @@
             text-decoration: underline;
         }
 
-        /* Make the content responsive */
         @media (max-width: 768px) {
             .service-page {
                 padding: 20px;
@@ -138,9 +139,11 @@
             <img src="{{ asset($serviceImage) }}" alt="{{ $serviceName }}" class="service-image">
             <!-- Service details -->
             <div class="content">
+                <h5>{{ $serviceSub }}</h5>
                 <p>{{ $serviceDetails }}</p>
-               
-    
+
+
+
             </div>
         </div>
 
