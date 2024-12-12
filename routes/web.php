@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -10,8 +11,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+
+
+
+Route::resource('services', ServiceController::class);
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
+
+
+
+
+
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -55,3 +72,7 @@ Route::get('/client-centric-approach', function () {
 Route::get('/innovative-solutions', function () {
     return view('innovative-solutions');
 });
+
+
+
+
